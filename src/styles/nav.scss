@@ -1,0 +1,49 @@
+nav {
+  width: 100vw;
+  height: 23vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 9999;
+  padding-left: 2rem;
+  .logo {
+    width: 135px;
+    height: auto;
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 44.6vw;
+    background: $main;
+    padding: 8px 2.5rem;
+    a {
+      font-family: 'Roboto Condensed', sans-serif;
+      color: $light;
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
+  }
+}
+
+.svg-icon {
+  width: 3em;
+  height: 3em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: $light;
+}
+
+.svg-icon circle {
+  stroke: $light;
+  stroke-width: 1;
+  fill: $main;
+}
