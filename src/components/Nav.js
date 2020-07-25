@@ -49,10 +49,10 @@ const Nav = () => {
       />
       <div className='links'>
         <Link to='/'>Home</Link>
-        <Link to='/'>About</Link>
-        <Link to='/'>Services</Link>
-        <Link to='/'>Projects</Link>
-        <Link to='/'>Contact</Link>
+        <Link to='/about'>About</Link>
+        <Link to='/services'>Services</Link>
+        <Link to='/projects'>Projects</Link>
+        <Link to='/contact'>Contact</Link>
         {user ? (
           <a href='#' onClick={() => App.auth().signOut()}>
             Log Out
