@@ -16,6 +16,7 @@
     "postcss-normalize": "^8.0.1",
     "postcss-preset-env": "^6.7.0",
     "postcss-simple-vars": "^5.0.2",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-firebase-file-uploader": "^2.4.3",
@@ -27,6 +28,7 @@
     "react-scripts": "3.2.0",
     "react-sortable-hoc": "^1.10.1",
     "react-stack-grid": "^0.7.1",
+    "serve": "^11.3.2",
     "styled-components": "^4.4.1",
     "styled-reboot": "^4.0.3"
   },
