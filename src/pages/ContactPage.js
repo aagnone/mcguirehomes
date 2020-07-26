@@ -56,25 +56,19 @@ const ContactPage = () => {
       <header>
         <h1 className="header-text">Say Hello! Tell us what we can do for you.</h1>
       </header>
-      <main className="d-block">
-        <div style={{ width: '80%', margin: '0 auto' }}>
+      <main className="d-block" style={{minHeight: '100vh'}}>
+        <div style={{ width: '100%', margin: '0 auto' }}>
           <Fade left big>
             <h2 style={{ fontSize: '3.3rem', textAlign: 'center' }}>Contact Us</h2>
           </Fade>
-          <div>
+          <div style={{position: 'relative'}}>
             <Fade right>
               {messageSent ? <p className="text-main">Message Sent!</p> : ''}
               {messageSent ? (
                 ''
               ) : (
                 <>
-                  <div style={{
-                      backgroundColor: '#212428',
-                      paddingLeft: '35px',
-                      paddingRight: '35px',
-                      width: '450px',
-                      margin: '0 auto'
-                  }}>
+                  <div className="human-check">
                     <form onSubmit={(e) => validOnSubmit(e)}>
                       <div style={{paddingTop: '20px'}}>
                         <input
