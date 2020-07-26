@@ -19,14 +19,39 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 44.6vw;
-    background: $main;
-    padding: 8px 2.5rem;
+    width: 53vw;
+    background: #0a4267;
+    padding: 0 1rem;
+    text-align: center;
+    flex-wrap: wrap;
+    transform: translateY(28px);
+    @media (min-width: 968px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 44.6vw;
+      background: $main;
+      padding: 0 2.5rem;
+      text-align: center;
+      flex-wrap: nowrap;
+    }
     a {
       font-family: 'Roboto Condensed', sans-serif;
       color: $light;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       text-decoration: none;
+      width: 25%;
+      padding: 10px 5px;
+      margin-left:5px;
+      @media (min-width: 968px) {
+        margin-left: none;
+        padding: 10px 0;
+        font-size: 1.4rem;
+      }
+      &:hover {
+        background: $light;
+        color: $main;
+      }
     }
   }
 }

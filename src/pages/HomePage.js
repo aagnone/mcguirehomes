@@ -88,7 +88,7 @@ const HomePage = () => {
       <main>
         <div className='firstContent'>
           <Fade left big>
-            <h2 style={{ fontSize: '3.3rem' }}>
+            <h2 className="display-text">
               {user && content.section1header ? (
                 <InlineEditText
                   text={content.section1header}
@@ -122,7 +122,7 @@ const HomePage = () => {
 
           <img src={image2} alt='' />
         </Fade>
-        <div style={{ textAlign: 'left', marginRight: '10vw', paddingLeft: '15rem' }}>
+        <div>
           <Fade right big>
             <h3 style={{ fontSize: '2.4rem', marginBottom: '1rem' }}>
               {user && content.infoSection1Header ? (
@@ -200,10 +200,10 @@ const HomePage = () => {
           height: '30vh',
           alignItems: 'center',
           justifyContent: 'space-around',
-          padding: '0 1rem'
+          padding: '0 1rem',
         }}>
         <Fade left big>
-          <h2 style={{ width: '40vw', textAlign: 'right', paddingRight: '7vw', fontSize: '3rem' }}>
+          <h2 className="sub-text">
             {user && content.section2Header ? (
               <InlineEditText text={content.section2Header} onSetText={text => testFunction('section2Header', text)} />
             ) : (
@@ -219,10 +219,11 @@ const HomePage = () => {
             position: 'absolute',
             top: '75%',
             left: '50%',
-            transform: 'translate(-50%, -50%)'
+            transform: 'translate(-50%, -50%)',
+            paddingLeft: 0
           }}></div>
         <Fade right big>
-          <h2 style={{ maxWidth: '40vw', fontSize: '2.4rem' }}>
+          <h2 className="min">
             {user && content.section2Content ? (
               <InlineEditText text={content.section2Content} onSetText={text => testFunction('section2Header', text)} />
             ) : (

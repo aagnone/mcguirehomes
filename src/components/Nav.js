@@ -53,13 +53,6 @@ const Nav = () => {
         <Link to='/services'>Services</Link>
         <Link to='/projects'>Projects</Link>
         <Link to='/contact'>Contact</Link>
-        {user ? (
-          <a href='#' onClick={() => App.auth().signOut()}>
-            Log Out
-          </a>
-        ) : (
-          <Link to='/adminSignIn'>Admin Login</Link>
-        )}
       </div>
     </nav>
   )

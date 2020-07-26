@@ -7,6 +7,7 @@ import { AuthProvider } from './context/Auth'
 import { ContentProvider } from './context/Content'
 import './styles/inlineEditStyle.css'
 import { GalleryImagesProvider } from './context/Gallery'
+import AdminNav from './components/AdminNav'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <GalleryImagesProvider>
           <Router>
             <Nav />
+            <AdminNav />
             <Switch>
               {routes.map(route => (
                 <Route key={route.path} path={route.path} exact={route.exact} component={route.main} />
