@@ -32,11 +32,16 @@ span {
   z-index: -1;
   overflow: hidden;
   .video {
-    width: 100%;
-    height: auto;
+    @media (min-width: 968px) {
+      width: 100%;
+      height: auto;
+      transform: translateX(0);
+      display: block;
+    }
     position: absolute;
     top: 0;
     left: 0;
+    display: none;
   }
 }
 
@@ -64,5 +69,27 @@ button {
     background-color: $main;
     border-color: $light;
     color: $light;
+  }
+}
+
+.sub-text {
+  padding-right: 8vw;
+  min-width: 50vw;
+  font-size: 2rem;
+  padding-top: 10vh;
+  @media (min-width: 968px) {
+    min-width: 20vw;
+    width: 40vw;
+    text-align: right;
+    padding-right: 7vw;
+    font-size: 3rem;
+  }
+}
+.min {
+  font-size: 1.2rem;
+  padding-top: 10vh;
+  @media (min-width: 968px) {
+    max-width: 40vw;
+    font-size: 2.4rem;
   }
 }

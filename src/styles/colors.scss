@@ -1,5 +1,32 @@
+@use "sass:map";
+
 $white: #f4eeed;
 $light: #dcd81d;
 $main: #0a4267;
 $accent: #6b919e;
 $dark: #212428;
+$colors: () !default;
+
+$colors: map-merge(
+  (
+    'white': $white,
+    'light': $light,
+    'main': $main,
+    'accent': $accent,
+    'dark': $dark,
+  ),
+  $colors
+);
+
+$theme-colors: () !default;
+
+$theme-colors: map-merge(
+  (
+    'white': $white,
+    'light': $light,
+    'main': $main,
+    'accent': $accent,
+    'dark': $dark,
+  ),
+  $theme-colors
+);
