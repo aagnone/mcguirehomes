@@ -66,13 +66,11 @@ const AboutPage = () => {
                     Our Employees
                 </h2>
             </Fade>
-            <Fade up>
                 <div className="special-grid">
                     {
                        (content && content.employees) && content.employees.map(employee => <EmployeeCard employee={employee} />)
                     }
                 </div>
-            </Fade>
         </div>
       </main>
     </div>

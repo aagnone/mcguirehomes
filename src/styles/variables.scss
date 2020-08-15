@@ -116,8 +116,11 @@ $positions: static, relative, absolute, fixed, sticky;
     position: absolute;
     left: -50vw;
     top: 50%;
-    transform: translate(-22%, -50%);
+    transform: translate(-42%, -50%);
     width: 100vw;
+    @media (min-width: 968px) {
+      transform: translate(-22%, -50%);
+    }
   }
 }
 .right-line-trail {

@@ -39,13 +39,11 @@ const ServicesPages = () => {
             <h2 style={{ fontSize: '3.3rem', textAlign: 'center' }}>Services</h2>
             <h3 style={{fontSize: '2rem'}}>McGuire Homes is a sub-contracting company that performs renovations projects for homes and apartment complexes, the company provides products and services.</h3>
           </Fade>
-          <Fade up>
             <div className="special-grid">
               {content &&
                 content.services &&
                 content.services.map((service) => <ServiceCard service={service} />)}
             </div>
-          </Fade>
         </div>
       </main>
     </div>
