@@ -43,6 +43,7 @@ nav {
       width: 25%;
       padding: 10px 5px;
       margin-left:5px;
+      transition: all 0.4s ease;
       @media (min-width: 968px) {
         margin-left: none;
         padding: 10px 0;

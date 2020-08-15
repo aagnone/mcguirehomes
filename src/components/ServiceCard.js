@@ -2,9 +2,9 @@ import React from 'react'
 
 const ServiceCard = ({service: {name, description}}) => {
     return (
-        <div style={{width: '200px', margin: '0 20px'}}>
+        <div className="grid-el">
             <div>
-                <img src="https://picsum.photos/200" />
+                <img src="https://picsum.photos/seed/sdfsdf/200" />
             </div>
             <div>
                 <h1>{name}</h1>

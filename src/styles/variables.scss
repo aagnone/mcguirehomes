@@ -97,3 +97,13 @@ $positions: static, relative, absolute, fixed, sticky;
 @each $color, $value in $theme-colors {
   @include text-emphasis-variant('.text-#{$color}', $value);
 }
+
+.special-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  .grid-el {
+    flex: 0 1 250px;
+    margin: 35px;
+  }
+}

@@ -142,3 +142,13 @@
     }
   }
 }
+
+.pageTitle {
+  transition: opacity .6s ease;
+  transform: translate(-5px, -10px);
+  font-size: 1em;
+  @media (min-width: 968px) {
+    font-size: 3.3rem;
+    transform: translate(-10%, 50%);
+  }
+}

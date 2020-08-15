@@ -30,6 +30,10 @@ const Nav = () => {
     }
   }, [])
 
+  const scrollTop = () =>{
+    window.scrollTo({top: 0, behavior: 'smooth'});
+   };
+
   return (
     <nav
       style={{
@@ -39,20 +43,27 @@ const Nav = () => {
         borderBottom: lastScrollY > 0 ? '2px solid rgba(61,56,56,.15)' : 'transparent'
       }}>
       <img
+        onClick={scrollTop}
         src={logo}
         className='logo'
         alt='Logo'
         style={{
           transform: transform,
-          transition: 'transform .6s ease'
+          transition: 'transform .6s ease',
+          cursor: 'pointer'
         }}
       />
+      <h1 className="pageTitle" style={{
+          opacity: lastScrollY > 0 ? '1': '0'
+        }}>
+          McGuire Homes
+      </h1>
       <div className='links'>
-        <Link to='/'>Home</Link>
-        <Link to='/about'>About</Link>
-        <Link to='/services'>Services</Link>
-        <Link to='/projects'>Projects</Link>
-        <Link to='/contact'>Contact</Link>
+        <Link onClick={scrollTop} to='/'>Home</Link>
+        <Link onClick={scrollTop} to='/about'>About</Link>
+        <Link onClick={scrollTop} to='/services'>Services</Link>
+        <Link onClick={scrollTop} to='/projects'>Projects</Link>
+        <Link onClick={scrollTop} to='/contact'>Contact</Link>
       </div>
     </nav>
   )

@@ -67,7 +67,7 @@ const AboutPage = () => {
                 </h2>
             </Fade>
             <Fade up>
-                <div className="d-flex">
+                <div className="special-grid">
                     {
                        (content && content.employees) && content.employees.map(employee => <EmployeeCard employee={employee} />)
                     }
