@@ -107,3 +107,28 @@ $positions: static, relative, absolute, fixed, sticky;
     margin: 35px;
   }
 }
+
+.left-line-trail {
+  &::before {
+    content: '';
+    height: 4px;
+    background-color: $main;
+    position: absolute;
+    left: -50vw;
+    top: 50%;
+    transform: translate(-22%, -50%);
+    width: 100vw;
+  }
+}
+.right-line-trail {
+  &::after {
+    content: '';
+    height: 4px;
+    background-color: $main;
+    position: absolute;
+    left: 20vw;
+    top: 50%;
+    transform: translate(-2%, -50%);
+    width: 100vw;
+  }
+}

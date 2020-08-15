@@ -43,7 +43,7 @@ const AboutPage = () => {
       <main className="d-block">
         <div style={{ width: '80%', margin: '0 auto'}}>
           <Fade left big>
-            <h2 style={{ fontSize: '3.3rem', textAlign: "center" }}>
+            <h2 className="left-line-trail" style={{position: 'relative', fontSize: '3.3rem', textAlign: "center", marginLeft: '10vw' }}>
                 About Us
             </h2>
           </Fade>
@@ -62,7 +62,7 @@ const AboutPage = () => {
         </div>
         <div style={{ width: '80%', margin: '0 auto'}}>
             <Fade left big>
-                <h2 style={{ fontSize: '3.3rem', textAlign: "center" }}>
+                <h2 className="right-line-trail" style={{ position: 'relative', fontSize: '3.3rem',  marginLeft: '10vw' }}>
                     Our Employees
                 </h2>
             </Fade>
