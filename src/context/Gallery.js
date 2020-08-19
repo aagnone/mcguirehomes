@@ -27,15 +27,25 @@ export const GalleryImagesProvider = ({ children }) => {
 
   const removeImage = url => {
     const tempImages = galleryData.images
+    const tempHeights = galleryData.heights
+    const tempWidths = galleryData.widths
+    const tempDescriptions = galleryData.descriptions
+    const tempNames = galleryData.names
     const index = tempImages.indexOf(url)
-    console.log(url)
     if (index > -1) {
       tempImages.splice(index, 1)
+      tempHeights.splice(index, 1)
+      tempWidths.splice(index, 1)
+      tempDescriptions.splice(index, 1)
+      tempNames.splice(index, 1)
     }
-    console.log(tempImages)
     setGalleryData({
       ...galleryData,
-      images: tempImages
+      images: tempImages,
+      names: tempNames,
+      widths: tempWidths,
+      heights: tempHeights,
+      descriptions: tempDescriptions
     })
   }
 
